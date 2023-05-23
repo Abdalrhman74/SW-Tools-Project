@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "ff1acc43-7791-4c51-a90b-ef8c43058e9c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AlAkeel",
+			"item": [
+				{
+					"name": "GetRestaurantDetails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/RestaurantDetails/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"RestaurantDetails",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signUp",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ali\",\r\n    \"role\":\"customer\",\r\n    \"Email\":\"ali@gmail.com\",\r\n    \"Password\":\"1234\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/SignUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"SignUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateRestaurantMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"pizza\",\r\n    \"price\":125.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/Menu/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"Menu",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateRestaurant",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"{}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ko\",\r\n    \"ownerId\":1,\r\n    \"menuSize\":5\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/CreateRestaurant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"CreateRestaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddItem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"pasta\",\r\n    \"price\":20.0\r\n}       ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/AddItem/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"AddItem",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RunnerSignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"abdo2\",\r\n    \"RunnerEmail\":\"abdooo@gmail.com\",\r\n    \"RunnerPassword\":\"123456\",\r\n    \"delivery_fees\":30\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/SignUpRunner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"SignUpRunner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveItem",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/RemoveItem/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"RemoveItem",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateItem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"banana\",\r\n    \"price\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Al_Akeel/UpdateItem/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Al_Akeel",
+								"UpdateItem",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRestaurantDetails_2",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Runner",
+			"item": [
+				{
+					"name": "markOrderDelivered",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Runner/markOrderDelivered/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Runner",
+								"markOrderDelivered",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TripNumbers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Runner/NumberOfTrips/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Runner",
+								"NumberOfTrips",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\":\"pasta\",\r\n    \"total_price\":120.0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Customer/createOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Customer",
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Customer/EditOrder/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Customer",
+								"EditOrder",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAllRestaurant",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Tools__1/api/Customer/AllRestaurant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Tools__1",
+								"api",
+								"Customer",
+								"AllRestaurant"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
